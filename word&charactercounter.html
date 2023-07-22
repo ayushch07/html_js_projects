@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Word and Character counter</h1>
+    <br>
+    <textarea id="txt" rows="20" cols="20"></textarea>
+    <p>
+        <span id="word">0 </span>Words and
+        <span id="char">0 </span>Characters
+        
+    </p>
+    <style>
+        h1{
+            text-align: center;
+            background-color: aqua;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 50px;
+            padding: 10px;
+            margin: 0;
+        }
+        #txt{
+              width: 99.5%;
+              font-size: 15px;
+              font-family:'Times New Roman', Times, serif;
+              border: 2px solid brown;
+
+
+        }
+        p{
+            text-align: center;
+            background-color: bisque;
+            font-size: 50px;
+            font-family: "Sofia", sans-serif; 
+        }
+    </style>
+    <script>
+          let txt=document.getElementById("txt");
+          txt.addEventListener('input',function(){
+                let p=this.value;
+                let char=p.length;
+              
+             document.getElementById("char").innerHTML=char;
+               p=p.trim();
+               let arr=p.split(" ");
+               let clean=arr.filter(function(e){
+                   return e!="";
+               })
+                    document.getElementById("word").innerHTML=clean.length;
+
+
+          })
+          let c=0;
+        //   txt.addEventListener('keypress',function(e) ye ek tarika hai word lenght ko count krne ka.
+        //   {
+        //         if(e.which==32 || e.which==13)
+        //         {
+        //             ++c;
+        //             document.getElementById("word").innerHTML=c;
+
+        //         }
+              
+        //   })
+    </script>
+</body>
+</html>

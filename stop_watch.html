@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <div id="container">
+        <div id="time">
+            <span class="digit" id="hr">00</span>
+            
+            <span class="txt">hr</span>
+            
+            <span class="digit" id="min">00</span>
+            
+            <span class="txt">min</span>
+            <span class="digit" id="sec">00</span>
+            
+            <span class="txt">sec</span>
+            <span class="digit" id="count">00</span>
+            
+      
+        </div>
+        <div class="button-container">
+            <button class="btn" id="start" onclick="start()">Start</button>
+            
+            <button class="btn" id="stop" onclick="stop()">Stop</button>
+            
+            <button class="btn" id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <style>
+        body{
+              display: flex;
+              background-color: #2c3e50;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+        }
+        #container{
+            color: silver
+        }
+        .digit{
+            font-size: 150px;
+            font-weight: bold;
+        }
+        .txt{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .button-container{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn{
+            padding: 7px 25px;
+            font-size: 15px;
+            margin: 0px 10px;
+            color: black;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid salmon;
+
+        }
+        #start
+        {
+            background-color: bisque;
+        }
+        
+        #stop
+        {
+            background-color:cadetblue
+        }
+        
+        #reset
+        {
+            background-color:turquoise
+        }
+    </style>
+       <script src="stopwatch.js"></script>
+</body>
+</html>

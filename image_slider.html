@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          <div class="slide-container">
+      <div class="slide">
+        <img src="./1.jpeg" alt="">
+        <div class="caption">Caption 1</div>
+      </div>
+      
+       <div class="slide">
+        <img src="./2.jpeg" alt="">
+        <div class="caption">Caption 2</div>
+   
+      </div>
+      
+      <div class="slide">
+        <img src="./3.jpeg" alt="">
+        <div class="caption">Caption 3</div>
+   
+      </div>
+      
+      <div class="slide">
+        <img src="./4.jpeg" alt="">
+        <div class="caption">Caption 4</div>
+   
+      </div>
+    </div>
+      <span class="arrow prev" onclick="control(-1)">&#10094</span>
+      
+      <span class="arrow next" onclick="control(1)">&#10095</span>
+      <style>
+       
+        body{
+            margin:0;
+        }
+        .slide-container{
+            position:relative;
+            width: 100%;
+        }
+        .slide img{
+          width: 50%;
+          position: relative;
+          margin-left: 360px;
+        }
+        .arrow{
+            position: absolute;
+            top:45%;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 25px;
+            border-radius: 50%;
+            padding: 8px 18px;
+            background-color: yellow;
+            color: black;
+        }
+        .prev{
+            left:10px;
+        }
+        .next{
+            right: 10px;
+        }
+        .caption{
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px 0px;
+        }
+        .slide{
+            display: none;
+        }
+
+      </style>
+      <script src="image_slider.js"></script>
+</body>
+</html>

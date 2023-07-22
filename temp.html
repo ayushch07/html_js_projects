@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <div id="container">
+        <div class="inp-div">
+            <label class="ll">Celsius</label><br>
+            <input type="number" value="0" class="inp" id="cel">
+        </div>
+        <div class="inp-div">
+            
+            <label class="ll">Fahrenheit</label><br>
+            <input type="number" value="32" class="inp" id="fah">
+        </div>
+    </div>
+    <style>
+        body{
+            background-color: azure;
+        }
+        #container{
+               background-color: bisque;
+               padding: 50px;
+               text-align: center;
+            
+        }
+        .inp-div{
+            display: inline-block;
+        }
+        .inp{
+            padding: 5px 10px;
+           margin: 10px;
+           font-size: larger;
+           text-align: center;
+           
+        }
+        .ll
+        {
+            font-family: cursive;
+            color:black;
+            font-size: larger;
+        }
+
+    </style>
+    <script src="temp.js"></script>
+</body>
+</html>

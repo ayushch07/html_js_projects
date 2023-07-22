@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Login</h1>
+        <form action="" onsubmit="return validateform()">
+            <input type="text" placeholder="Input name" id="txt"><br>
+            <p id="para"></p>
+            <input type="password" placeholder="password" id="pass" ><br>
+            <p id="pa"></p>
+            <input type="submit"  id="btn">
+        </form>
+    </div>
+    <style>
+        body{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            display:flex;
+            justify-content: center;
+        }
+        #container{
+              text-align: center;
+              margin-top: 250px;
+              background-color: white;
+              width: 25%;
+              height: 300px;
+        }
+        h1{
+            font-family: monospace;
+        }
+        #txt{
+               height: 30px;
+               width: 300px;
+              border: 2px solid lightsalmon;
+              margin-bottom: 20px;
+              
+        }
+        
+        #pass{
+               height: 35px;
+               width: 300px;
+              border: 2px solid lightsalmon;
+              margin-bottom: 20px;
+              
+        }
+        #btn{
+              width: 100px;
+               border-radius: 20px;
+               color: blue  ;
+        }
+        #para,#pa{
+              text-align: left;
+              color: red;
+        }
+    </style>
+    <script>
+         let txt=document.getElementById("txt");
+         
+         let pass=document.getElementById("pass");
+         let flag=1;
+         let f=1;
+        function validateform(){
+                 
+                  if(txt.value.length==0)
+                  {
+                    document.getElementById("para").innerHTML="Name requruire a field";   
+                    f=0;
+                  }
+                  else if(txt.value.length<3)
+                  {
+                        document.getElementById("para").innerHTML="Require min 3 characters";
+                        f=0;
+                  }
+                  else{
+                    document.getElementById("para").innerHTML="";
+                    f=1;
+                  }
+                 
+                   if(pass.value=="")
+                  {
+                    document.getElementById("pa").innerHTML="Password is required";   
+                    flag=0;
+                  }
+                  else{
+                   
+                    document.getElementById("pa").innerHTML="";
+                    flag=1;
+                  }
+                  if(flag==1 && f==1)
+               return true;
+               else
+               return false;
+        }
+    </script>
+</body>
+</html>

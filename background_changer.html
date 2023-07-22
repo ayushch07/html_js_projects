@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pop">
+        <span class="btn" id="white" onclick="changebg('wheat')"></span>
+        <span class="btn" id="aqua" onclick="changebg('aquamarine')"></span>
+        
+        <span class="btn" id="violet" onclick="changebg('violet')"></span>
+        <span class="btn" id="black" onclick="changebg('black')"></span>
+        
+    </div>
+    <h1 class="h1">About Us</h1>
+    <img src="./4.jpeg" id="img" align="center">
+
+
+<p class="h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorum tempore voluptate dolores, modi dignissimos consequatur veritatis sunt consequuntur porro, quaerat maiores deleniti minima quia ab distinctio saepe quis dolore esse et hic. Laboriosam tempore quae voluptatem, ratione explicabo eum est repudiandae, quibusdam labore nemo reiciendis facere vero debitis similique provident velit, laborum quis? Delectus, voluptatibus accusamus repellendus officia maxime officiis ex aliquid, dolor iure, ducimus deserunt ipsum id pariatur quam? Temporibus dolorem provident aperiam in repellat explicabo, maxime commodi. Ex pariatur odio vel ipsa magnam eligendi repellat, labore alias beatae dolorem quasi dolor in. Quaerat dolorem ex nobis ad omnis exercitationem numquam velit, culpa ab placeat odit! Et minima hic quo, aspernatur enim sit molestias vero asperiores impedit vitae veritatis quaerat aperiam porro rerum consequuntur. Sed eos ullam necessitatibus voluptates neque soluta dicta, minus accusamus, eius ipsam minima suscipit iure asperiores? Sequi corporis asperiores cumque commodi nam, distinctio in, necessitatibus maiores repudiandae porro quod ipsum exercitationem magni voluptatem sed laborum odio voluptate reprehenderit nisi accusamus voluptates vero impedit doloribus. Rerum placeat nulla consequatur culpa ipsa aperiam, quasi veritatis expedita consectetur vitae possimus temporibus fugiat nostrum dicta voluptatibus accusantium neque vero molestias vel repudiandae sunt. Corporis rerum voluptas labore, assumenda incidunt vero, eaque quos consequatur, eius dignissimos nemo totam ullam vel inventore ea iste perspiciatis perferendis ducimus neque repudiandae. Repudiandae quidem voluptate quaerat non, magnam corrupti repellat asperiores. Molestiae odio, deserunt quasi ut suscipit quis eius voluptate quas itaque beatae! Repellendus tempora ratione, autem accusantium sunt vero. Saepe eaque officia tempora non commodi, ipsa amet perspiciatis! Rerum nobis, at ratione sequi pariatur voluptatum ducimus consequuntur quos rem harum repellat est ex itaque laborum delectus eum dolor quo autem amet. Dignissimos, doloremque. Expedita rerum perferendis vero maiores quam, ut officiis aperiam eaque consectetur quas cupiditate voluptates. Nisi laboriosam quasi ipsam placeat numquam dignissimos vitae. Sed, illo voluptates quam tenetur tempore dolore esse id pariatur maiores nobis minima, dolorem ex, exercitationem numquam debitis! Ex temporibus architecto et expedita blanditiis odio officiis repellendus perferendis in praesentium corrupti, corporis aliquid accusamus odit quam ratione cupiditate debitis ea quae dolorum cum nisi. Consequatur explicabo praesentium iste voluptatum velit placeat qui? Tempore est quos corporis optio earum. Quod perspiciatis amet magni reiciendis nemo! Sint debitis eveniet facere rerum est similique sit, obcaecati illum temporibus ipsa odit blanditiis minima dolorem porro libero omnis vel asperiores officiis deleniti. Ab, repellendus cum ullam facilis possimus accusantium. Voluptas ducimus fugiat tempora officia autem neque. Labore tempore enim laboriosam fuga nobis! Sit, cumque? Perferendis provident culpa, dolor fugiat natus ex at deserunt facilis illo sequi ut animi ipsam harum reiciendis debitis id ab enim commodi! Illum nulla dolore architecto laboriosam sed sequi distinctio, odio nostrum voluptate quod, nesciunt, suscipit velit reprehenderit numquam sapiente? Facilis quo deleniti architecto in iure deserunt! Velit nisi et, officia inventore rem saepe est excepturi consequatur ducimus dolores similique voluptate facilis iusto laudantium omnis repudiandae tenetur laborum error. Velit obcaecati totam beatae animi nobis illum minima fugit earum, vitae nemo. Delectus unde, quae consequatur odio esse modi?</p>
+<style>
+    #img{
+      
+            padding:50px;
+            padding-left: 480px;
+            padding-top: 0px;
+            width: 30%;
+            
+    }
+    h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+    }
+    p{
+        display:block;
+        text-align: justify;
+    }
+    #pop{
+        text-align: right;
+    
+    }
+    .btn{
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        cursor: pointer;
+    
+    }
+    #white{
+        background-color: wheat;
+        border-radius: 10px;
+        border: 4px solid goldenrod;
+    }
+    #aqua{
+        background-color: aquamarine;
+        border-radius: 10px;
+        border: 4px solid goldenrod;
+    }
+    #violet{
+        background-color: violet;
+        border-radius: 10px;
+        border: 4px solid goldenrod;
+    }
+    #black{
+        background-color: black;
+        border-radius: 10px;
+        border: 4px solid goldenrod;
+        
+    }
+    
+
+</style>
+<script>
+    function changebg(color){
+        document.body.style.backgroundColor=color;
+        let h=document.getElementsByClassName("h1");
+        if(color=="black")
+        {
+          
+              for(let elm of h)
+              {
+                elm.style.color="white";
+              }
+        }
+        else
+        {
+          
+              for(let elm of h)
+              {
+                elm.style.color="black";
+              }
+        }
+    }
+
+</script>
+</body>
+</html>
